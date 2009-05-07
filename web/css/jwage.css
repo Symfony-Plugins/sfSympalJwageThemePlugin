@@ -1,0 +1,325 @@
+body { font:13px/1.231 "Lucida Grande",verdana,arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small;}table {font-size:inherit;font:100%;}pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%;}
+a:link, a:visited, a:active { text-decoration:none; color:#3370C9; outline:none; border:0; }
+a:hover  { color: #00508c; text-decoration:underline; border:0; }
+::-moz-selection{ background: #2E6BC8; color: #fff; }
+::selection { background: #2E6BC8; color: #fff; }
+
+#wrap {
+   margin-left: auto;
+   margin-right: auto;
+   width: 95%;
+   margin-top: 25px;
+}
+
+#top {
+  width: 100%;
+  height: 28px;
+  color: #fff;
+  background: #000;
+  overflow:hidden;
+}
+
+#top h2 {
+  width: 300px;
+  color: white;
+  letter-spacing: 3px;
+  height: 28px;
+  font-size: 1.7em;
+  font-weight: normal;
+  position: relative;
+  margin: 0px;
+  display: block;
+  float: left;
+  background: url(../images/bg_t.gif) no-repeat;
+  padding-left: 10px;
+}
+
+#top h2 a {
+  color: white;
+  text-decoration: none;
+}
+
+#top h2 a:hover {
+  color: #93B300;
+}
+
+#top2 {
+  background-image: url('../../sfSympalPlugin/images/bc_bg.png');
+  background-repeat: repeat-x;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 6px;
+  text-align: right;
+}
+
+#top2 h3 {
+  padding: 0;
+  margin: 0;
+  color: #2d2c2c;
+}
+
+#menu {
+  float: right;
+}
+
+#menu ul {
+  margin: 0;
+  list-style: none;
+}
+
+#menu li {
+  float: left;
+  white-space: nowrap;
+  list-style: none;
+}
+
+#menu li a {
+  padding: 6px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+#menu li a:hover {
+  background: url(../images/bg_menu.gif);
+}
+
+#menu li a.current {
+  letter-spacing: 1px;
+  background: url(../images/bg_menu.gif);
+}
+
+#menu li a.current:hover {
+  color: #fff;
+}
+
+#menu a {
+  display: block;
+  height: 2.0em;
+  padding: 0.3em 0.3em 0.3em 0.8em;
+  border-bottom: 2px; /*solid #1a1a1a*/
+  border-top: 2px; /*solid #1a1a1a*/
+  color: #93B300;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#menu a:hover {
+  color: #fff;
+  background: url(../images/bg_t.gif) no-repeat;
+  background-color: #fff;
+  font-weight: bold;
+}
+
+
+#content {
+  width: 100%;
+  margin-top: 20px;
+}
+
+#content #sympal_social_follow #sympal_breadcrumbs {
+  display: none;
+}
+
+#content h2 {
+  margin: 0;
+  padding: 10px 0 10px 0;
+}
+
+#left {
+  background: #fff;
+  position: relative;
+}
+
+#right {
+  min-height: 300px;
+  float: right;
+  right: 30px;
+  width: 225px;
+  width: 225px;
+  background: #F6F9FB;
+  border: 1px solid #E1E1E1;
+  padding: 10px 10px 15px 10px;
+  float: right;
+}
+
+#right h2 {
+  font-size: 1.1em;
+  margin: 0px 0 0px 0;
+  padding:0px 0 5px 0;
+}
+
+#right a {
+  margin: 10px 0 10px 0;
+  color: #93B300;
+  font-weight: bold;
+}
+
+#right p {
+  margin: 5px 0 10px 0;
+  line-height: 15px;
+}
+
+#right ul {
+  padding: 0 0 7px 20px;
+  margin:10px 0 10px 0;
+}
+
+#right li {
+  margin-top:5px;
+}
+
+#clear {
+  display: block;
+  clear: both;
+  width: 100%;
+  height:1px;
+  overflow:hidden;
+}
+
+#footer {
+  margin: 40px auto 0 auto;
+  text-align: center;
+  border-top: dotted 1px gray;
+  padding: 20px 0 20px 0;
+  width: 100%;
+  font-weight: bold;
+}
+
+#footer p {
+  margin: 0px;
+  padding: 0;
+}
+
+
+table tr td {
+  border: none;
+}
+
+table tr th {
+  background: #c1dbff;
+  color: #183359;
+  border: none;
+  white-space: nowrap;
+}
+
+#sympal_breadcrumbs
+{
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: -50px;
+}
+
+#sympal_breadcrumbs ul
+{
+  font: 11px Arial, Helvetica, sans-serif;
+  height: 28px;
+  line-height: 30px;
+  color: #9b9b9b;
+  margin: 0;
+  padding: 0;
+}
+
+#sympal_breadcrumbs li
+{
+  list-style-type: none;
+  float: left;
+  padding-left: 10px;
+}
+
+#sympal_breadcrumbs li a
+{
+  height: 28px;
+  display: block;
+  background-image: url('../../sfSympalPlugin/images/bc_separator.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-right: 15px;
+  text-decoration: none;
+  color: #454545;
+}
+
+#sympal_breadcrumbs li a:hover
+{
+  color: #35acc5;
+}
+
+#sympal_breadcrumbs li#breadcrumbs-home
+{
+  background: url('../../sfSympalPlugin/images/home.png') no-repeat;
+  background-position: center;
+}
+
+#sympal_breadcrumbs li#breadcrumbs-home a
+{
+  text-indent: -9999;
+  font-size: 0;
+  width: 20px;
+}
+
+.notice {
+  margin: 4px 0;
+  padding: 4px 4px 4px 30px;
+  background: url(../../sfSympalPlugin/images/tick.png) no-repeat 10px 4px;
+}
+
+.error {
+  margin: 4px 0;
+  padding: 4px 4px 4px 30px;
+  background: url(../../sfSympalPlugin/images/error.png) no-repeat 10px 4px;
+  background-color: #f33;
+  color: red;
+}
+
+.notice, .error {
+  background-color: #ffc;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  font-weight: bold;
+}
+
+ul.error_list
+{
+  margin: 0;
+  margin-bottom: 7px;
+  color: #d33;
+  border: none;
+  background-color: #f33;
+}
+
+ul.error_list li
+{
+  padding: 4px;
+  padding-left: 25px;
+  list-style: none;
+  color: #fff;
+  background: url(../../sfSympalPlugin/images/error.png) no-repeat 4px 4px;
+}
+
+#ask_confirmation {
+  padding: 12px;
+  background: #ffc;
+  border: 1px solid #ddd;
+}
+
+#ask_confirmation h2 {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+#ask_confirmation p {
+  margin-bottom: 10px;
+}
+
+#sympal_signin_form {
+  padding: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
+  background: #ffc;
+  border: 1px solid #ddd;
+  margin: 0 auto;
+  width: 250px;
+}
