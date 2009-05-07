@@ -15,7 +15,7 @@
 
   <div id="wrap">
     <div id="top">
-      <h2><?php echo link_to('Jonathan H. Wage', '@homepage'); ?></h2>
+      <h2><?php echo link_to(sfSympalContext::getInstance()->getSiteRecord(), '@homepage'); ?></h2>
       <div id="menu">
         <?php $menu = get_sympal_split_menus('primary', false, 8, true) ?>
         <?php echo $menu['primary'] ?>
@@ -50,7 +50,7 @@
 
       <div id="clear"></div></div>
       <div id="footer">
-        <p>Copyright 2006-<?php echo date('Y'); ?> Jonathan H. Wage</p>
+        <p>Copyright <?php echo sfSympalContext::getInstance()->getSiteRecord() ?></p>
       </div>
     </div>
 
