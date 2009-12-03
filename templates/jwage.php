@@ -1,17 +1,17 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-
+<?php $editor = get_sympal_editor() ?>
+<?php $flash = get_sympal_flash() ?>
 <?php include_http_metas() ?>
 <?php include_metas() ?>
 <?php include_title() ?>
-
+<?php include_stylesheets() ?>
+<?php include_javascripts() ?>
 <link rel="shortcut icon" href="/favicon.ico" />
 </head>
 
 <body id="frontend" class="yui-skin-sam">
-
-  <?php echo get_sympal_ui() ?>
 
   <div id="wrap">
     <div id="top">
@@ -27,7 +27,7 @@
     </div>
 
     <div id="content">
-      <?php echo get_sympal_flash() ?>
+      <?php echo $flash ?>
 
       <?php $secondaryMenu = (string) $menu['secondary'] ?>
       <?php $subMenu = (string) get_sympal_menu(sfSympalToolkit::getCurrentMenuItem()) ?>
@@ -54,7 +54,7 @@
       </div>
     </div>
 
-  <?php echo get_sympal_editor() ?>
+  <?php echo $editor ?>
 
 </body>
 </html>
