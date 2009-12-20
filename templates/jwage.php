@@ -15,7 +15,7 @@
 
   <div id="wrap">
     <div id="top">
-      <h2><?php echo link_to(sfSympalContext::getInstance()->getSite(), '@homepage'); ?></h2>
+      <h2><?php echo link_to($sf_sympal_context->getSite(), '@homepage'); ?></h2>
       <div id="menu">
         <?php $menu = get_sympal_split_menus('primary', false, 8, true) ?>
         <?php echo $menu['primary'] ?>
@@ -30,7 +30,7 @@
       <?php echo $flash ?>
 
       <?php $secondaryMenu = (string) $menu['secondary'] ?>
-      <?php $subMenu = (string) get_sympal_menu(sfSympalToolkit::getCurrentMenuItem()) ?>
+      <?php $subMenu = (string) get_sympal_menu($sf_sympal_context->getCurrentMenuItem()) ?>
       <?php if(has_slot('sympal_right_sidebar') || $secondaryMenu || $subMenu): ?>
         <style>
         #left {
