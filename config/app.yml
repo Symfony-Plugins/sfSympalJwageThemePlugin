@@ -1,0 +1,7 @@
+all:
+  sympal_config:
+    themes:
+      jwage:
+        layout: jwage
+        stylesheets:
+          - /sfSympalJwageThemePlugin/css/jwage.css
